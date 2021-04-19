@@ -1,0 +1,1 @@
+export { sortArray } from './sortArray';
