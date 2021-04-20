@@ -8,7 +8,7 @@ const EPISODE_OPTION = 'episode-option';
 
 export function SortBy({ sortBy, onSortByChange }) {
   return (
-    <div className="flex flex-col justify-start mt-5 text-gray-200 w-64 sm:w-96 h-48 sm:h-24 bg-white rounded-lg shadow-lg p-5">
+    <div className="flex flex-col justify-start mt-5 text-gray-200 w-64 sm:w-96 h-48 sm:h-28 bg-white rounded-lg shadow-lg p-5">
       <div className="flex mb-2 items-center w-full text-base text-yellow-600 font-light">
         <SortIcon className="w-4 h-4 mr-2" /> Sort By
       </div>
