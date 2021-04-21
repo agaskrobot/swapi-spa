@@ -74,7 +74,7 @@ export function Home() {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="flex flex-wrap flex-row text-xl justify-center text-sm font-extralight min-w-min px-10 w-screen">
+        <div className="flex flex-wrap flex-row text-xl justify-center text-sm font-extralight min-w-min px-10 pb-10 w-screen">
           <Alert error={error} onClose={() => setError(null)} />
           <SearchBar episodes={episodes} onEpisodeSelect={handleEpisodeSelect} onError={setError} />
           <SortBy sortBy={sortBy} onSortByChange={handleSortByChange} />
