@@ -10,7 +10,7 @@ export function Button({ children, width, color, disabled, submit, onClick }) {
   const widthClass = width ? width : 'w-full';
   return (
     <button
-      className={`flex justify-center text-sm font-extralight ${color} rounded-lg items-center text-center leading-3.5 disabled:opacity-50 disabled:cursor-not-allowed h-10 ${widthClass} focus:outline-none text-gray-200`}
+      className={`flex justify-center text-sm font-extralight ${color} rounded-lg items-center text-center leading-3.5 disabled:opacity-50 disabled:cursor-not-allowed h-10 ${widthClass} focus:outline-none text-gray-700`}
       onClick={handleClick}
       disabled={disabled}
       type={submit ? 'submit' : 'button'}

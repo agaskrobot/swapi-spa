@@ -50,7 +50,7 @@ export function EpisodeDetails() {
         <>
           <div
             onClick={() => history.push('/')}
-            className="flex w-40 p-5 justify-start font-extralight cursor-pointer hover:underline text-gray-200 items-center text-sm group-hover:underline"
+            className="flex w-40 p-5 justify-start font-extralight cursor-pointer hover:underline text-gray-700 items-center text-sm group-hover:underline"
           >
             <ArrowIcon className="w-3 h-3 mr-2" />
             Back to the list

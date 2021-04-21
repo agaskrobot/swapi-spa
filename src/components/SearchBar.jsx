@@ -33,7 +33,7 @@ export function SearchBar({ episodes, onEpisodeSelect }) {
     );
   } else if (value !== '' && results.length) {
     resultsComponent = (
-      <div className="flex-col text-base font-extralight shadow-lg rounded-lg w-full h-auto p-5 bg-white text-gray-200 items-center justify-center">
+      <div className="flex-col text-base font-extralight shadow-lg rounded-lg w-full h-auto p-5 bg-white text-gray-700 items-center justify-center">
         {results.map((result) => (
           <div
             onClick={() => onEpisodeSelect(result)}
@@ -47,7 +47,7 @@ export function SearchBar({ episodes, onEpisodeSelect }) {
     );
   } else if (value !== '' && !results.length) {
     resultsComponent = (
-      <div className="flex text-base font-extralight shadow-lg rounded-lg w-full h-40 bg-white items-center text-gray-200 justify-center">
+      <div className="flex text-base font-extralight shadow-lg rounded-lg w-full h-40 bg-white items-center text-gray-700 justify-center">
         No results found
       </div>
     );
@@ -57,7 +57,7 @@ export function SearchBar({ episodes, onEpisodeSelect }) {
     <div className="z-40 mt-10 w-full text-base font-extralight">
       <input
         autoComplete="off"
-        className="w-full rounded-lg text-base font-extralight focus:outline-none h-10 p-2 text-gray-200"
+        className="w-full rounded-lg text-base font-extralight focus:outline-none h-10 p-2 text-gray-700"
         id="searchBar"
         type="text"
         placeholder="Search by title..."

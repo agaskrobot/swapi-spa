@@ -60,6 +60,7 @@ export function Home() {
           let directors = [];
           response.data.results.map((episode) => directors.push(episode.director));
           let filteredDirectors = directors.filter((item, index) => directors.indexOf(item) === index);
+          filteredDirectors.map((director) => dispatch(actions.filter(director)));
           dispatch(actions.loadDirectors(filteredDirectors));
           setDisplayEpisodes(sortedEpisodes);
         })

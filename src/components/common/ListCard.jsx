@@ -6,7 +6,7 @@ import { CardItem } from './CardItem';
 export const ListCard = ({ episode, onClick }) => (
   <div
     onClick={onClick}
-    className="flex group z-1 flex-col mt-6 w-64 text-sm sm:text-base sm:w-96 h-auto text-gray-100 bg-white cursor-pointer rounded-lg shadow-lg p-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+    className="flex group z-1 flex-col mt-6 w-64 text-sm sm:text-base sm:w-96 h-auto text-gray-700 bg-white cursor-pointer rounded-lg shadow-lg p-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
   >
     <CardItem label="Episode:" value={episode.episode_id} />
     <CardItem label="Title:" value={episode.title} />

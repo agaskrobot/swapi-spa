@@ -24,5 +24,8 @@ To run the application in the development mode execute:
 
 After open [http://localhost:3000](http://localhost:3000) to access the application.
 
+## To enter application in the production mode open : 
+
+[https://agnieszka-skrobot-swapi.herokuapp.com/](https://agnieszka-skrobot-swapi.herokuapp.com/)
 
       
