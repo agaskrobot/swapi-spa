@@ -13,7 +13,7 @@ export function episode(state = INITIAL_STATE, { type, payload }) {
   switch (type) {
     case actions.SELECTED_EPISODE: {
       if (payload.episode !== null) {
-        sessionStorage.setItem('episodeId', payload.episode.id);
+        sessionStorage.setItem('episodeId', payload.episode.episode_id);
       } else {
         sessionStorage.removeItem('episodeId');
       }
