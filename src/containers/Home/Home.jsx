@@ -35,17 +35,12 @@ export function Home() {
     dispatch(actions.filter(checked));
   };
 
-  // useEffect sort list by selected option
-  useEffect(() => {
-    let sortedEpisodes = sortArray(displayEpisodes, sortBy);
-    setDisplayEpisodes(sortedEpisodes);
-  }, [sortBy, checked]);
-
-  // useEffect filter selected options
+  // useEffect sort list by selected option and filter by directors
   useEffect(() => {
     let filtredEpisodes = episodes.filter((episode) => checked.includes(episode.director));
-    setDisplayEpisodes(filtredEpisodes);
-  }, [checked]);
+    let sortedEpisodes = sortArray(filtredEpisodes, sortBy);
+    setDisplayEpisodes(sortedEpisodes);
+  }, [sortBy, checked]);
 
   // useEffect loads all episodes.
   useEffect(() => {
